@@ -429,7 +429,7 @@
 
 <span class='doccomment'>/// A block containing free memory. It points to the next hole and thus forms a linked list.</span>
 <span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>not</span>(<span class='ident'>test</span>))]</span>
-<span class='kw'>struct</span> <span class='ident'>Hole</span> {
+<span class='kw'>pub</span> <span class='kw'>struct</span> <span class='ident'>Hole</span> {
     <span class='ident'>size</span>: <span class='ident'>usize</span>,
     <span class='ident'>next</span>: <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>Unique</span><span class='op'>&lt;</span><span class='ident'>Hole</span><span class='op'>&gt;&gt;</span>,
 }
